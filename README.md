@@ -1,3 +1,19 @@
+
+# WeatherWise
+WeatherWise is your go-to weather forecast app, designed to keep you in the know about the current day's weather conditions. Whether you're planning your daily activities, a weekend getaway, or just want to stay ahead of the elements, WeatherWise has you covered.
+
+
+## Features
+
+- Current Day Weather: Real-time temperature, wind speed, humidity, and pressure.
+- Temperature Units: Switch between Celsius and Fahrenheit.
+- Location-Based: Fetches your current location for instant updates.
+- Weather Maps: Interactive maps for in-depth weather data
+
+## App Interface
+![Screenshot 2023-10-22 160241](https://github.com/Rupal-Gupta29/WeatherWise-ReactJS/assets/70842313/64207c59-34d1-45b1-99d6-51a00199bb09)
+![Screenshot 2023-10-22 160349](https://github.com/Rupal-Gupta29/WeatherWise-ReactJS/assets/70842313/19c5ea2d-0ce2-4492-8654-a1bdc3ced9d3)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
