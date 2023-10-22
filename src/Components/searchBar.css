@@ -1,0 +1,23 @@
+.btn-container{
+    text-align: end;
+}
+
+.search-container{
+    background-color: rgba(0, 0, 0, 0.562);
+}
+
+.search-inp{
+    background-color: transparent !important;
+    color: white !important;
+}
+
+.search-inp::placeholder{
+    color: white !important;
+}
+
+@media screen and (max-width:576px) {
+    .btn-container{
+        text-align: start;
+        padding-top: 10px;
+    }
+}

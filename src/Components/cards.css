@@ -1,0 +1,9 @@
+.card-container {
+  margin-top: 70px !important;
+}
+
+@media screen and (max-width: 768px) {
+  .card-container {
+    margin-top: 50px !important;
+  }
+}

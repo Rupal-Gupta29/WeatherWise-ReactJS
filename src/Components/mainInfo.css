@@ -1,0 +1,37 @@
+.main-info-container{
+    background-color: rgba(0, 0, 0, 0.562);
+    margin-top: 70px !important;
+}
+
+.details-container{
+    width: fit-content;
+    text-align: center;
+}
+
+div.main-info-container:nth-child(2){
+   display: flex;
+   align-items: center;
+}
+
+div.main-info-container:nth-child(2) h1{
+    text-align: end;
+ }
+
+
+@media screen and (max-width:768px) {
+    .main-info-container{
+        margin-top: 50px !important;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .details-container{
+        width: 100%;
+    }
+
+    div.main-info-container:nth-child(2) h1{
+       text-align: center;
+       margin-top: 20px;
+    }
+   
+}
