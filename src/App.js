@@ -50,7 +50,7 @@ const App = () => {
   useEffect(() => {
     if (!firstRender) {
       fetch(
-        `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=${weatherUnit}&appid=${process.env.REACT_APP_API_KEY}`,
+        `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=${weatherUnit}&appid=${process.env.REACT_APP_API_KEY}`,
       )
         .then((response) => {
           if (!response.ok) {
