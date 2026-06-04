@@ -10,7 +10,7 @@ WeatherWise is your go-to weather forecast app, designed to keep you in the know
 - Location-Based: Fetches your current location for instant updates.
 - Weather Maps: Interactive maps for in-depth weather data
 
-To access the app - https://weatherwise-react-app.netlify.app/
+App - https://weatherwise-react-app.netlify.app/
 
 ## App Interface
 ![Screenshot 2023-10-22 160241](https://github.com/Rupal-Gupta29/WeatherWise-ReactJS/assets/70842313/64207c59-34d1-45b1-99d6-51a00199bb09)
