@@ -4,7 +4,7 @@ import MainInfo from "./Components/MainInfo";
 import Cards from "./Components/Cards";
 import spinner from "./Assets/loading.gif";
 import "./App.css";
-import Swal from 'sweetalert2';
+import Swal from "sweetalert2";
 
 const App = () => {
   const [firstRender, setFirstRender] = useState(true);
@@ -19,7 +19,7 @@ const App = () => {
         let lat = position.coords.latitude;
         let lon = position.coords.longitude;
         fetch(
-          `http://api.openweathermap.org/geo/1.0/reverse?lat=${lat}&lon=${lon}&limit=5&appid=${process.env.REACT_APP_API_KEY}`
+          `https://api.openweathermap.org/geo/1.0/reverse?lat=${lat}&lon=${lon}&limit=5&appid=${process.env.REACT_APP_API_KEY}`,
         )
           .then((response) => {
             if (!response.ok) {
@@ -35,11 +35,11 @@ const App = () => {
           .catch((err) => {
             console.log("Error occured:", err);
             Swal.fire({
-              icon: 'error',
-              title: 'Oops...',
-              text: 'Wrong Input!',
-              footer: 'Try again...'
-            })
+              icon: "error",
+              title: "Oops...",
+              text: "Wrong Input!",
+              footer: "Try again...",
+            });
           });
       });
     } else {
@@ -50,7 +50,7 @@ const App = () => {
   useEffect(() => {
     if (!firstRender) {
       fetch(
-        `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=${weatherUnit}&appid=${process.env.REACT_APP_API_KEY}`
+        `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=${weatherUnit}&appid=${process.env.REACT_APP_API_KEY}`,
       )
         .then((response) => {
           if (!response.ok) {
@@ -67,11 +67,11 @@ const App = () => {
         .catch((err) => {
           console.log("Error occured", err);
           Swal.fire({
-            icon: 'error',
-            title: 'Oops...',
-            text: 'Wrong Input!',
-            footer: 'Try again...'
-          })
+            icon: "error",
+            title: "Oops...",
+            text: "Wrong Input!",
+            footer: "Try again...",
+          });
         });
     }
   }, [city, firstRender, weatherUnit]);
